@@ -1,8 +1,5 @@
 var Javabuzz = function(){};
 
-Javabuzz.prototype._isDivisibleBy = function(number, divisor) {
-  return (number % divisor === 0);
-};
 
 Javabuzz.prototype.isDivisibleByThree = function(number) {
   return true;
@@ -26,4 +23,12 @@ Javabuzz.prototype.isDivisibleByThreeAndFive = function(number) {
 
 Javabuzz.prototype.isDivisibleByThreeAndFive = function(number) {
   return(number % 15 === 0);
+};
+
+Javabuzz.prototype._isDivisibleBy = function(number, divisor) {
+  return (number % divisor === 0);
+};
+
+Javabuzz.prototype._isDivisibleByFifteen = function(number) {
+  return _isDivisibleBy(number, 15);
 };
