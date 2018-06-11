@@ -4,12 +4,14 @@ describe('Javabuzz', function() {
   describe('knows when a number is', function() {
     it('divisble by 3', function() {
       javabuzz = new Javabuzz();
-      expect(javabuzz.isDivisibleByThree(3)).toBe (true);
+      expect(javabuzz.isDivisibleByThree(3)).toBe(true);
     });
 
+    describe('when a number is NOT', function() {
+      it('divisble by 3', function() {
+        javabuzz = new Javabuzz();
+        expect(javabuzz.isDivisibleByThree(1)).toBe(false);
+      });
+    });
   });
 });
-
-Javabuzz.prototype.isDivisibleByThree = function(number) {
-  return true;
-};
